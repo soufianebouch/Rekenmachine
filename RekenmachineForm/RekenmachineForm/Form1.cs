@@ -83,6 +83,7 @@ namespace RekenmachineForm
                 textBox1.Text = Convert.ToString(Class1.Berekenen(eersteGetal, double.Parse(textBox1.Text), teken));
                 eersteGetal = 0;
                 teken = "";
+                textBox2.Text = textBox1.Text;
             }
         }
 
