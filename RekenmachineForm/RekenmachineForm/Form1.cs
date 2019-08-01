@@ -78,7 +78,11 @@ namespace RekenmachineForm
 
         private void Button15_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text != "")
+            if (eersteGetal == 0)
+            {
+                textBox1.Text = textBox1.Text;
+            }
+            else if (textBox1.Text != "")
             {
                 textBox1.Text = Convert.ToString(Class1.Berekenen(eersteGetal, double.Parse(textBox1.Text), teken));
                 eersteGetal = 0;
